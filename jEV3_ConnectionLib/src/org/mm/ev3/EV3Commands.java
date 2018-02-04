@@ -67,10 +67,17 @@ public class EV3Commands {
 	
 	
 	public void sendMailBox (
-			int counter,
+			short counter,
 			String key,
 			Boolean value) throws Exception {
 		System.out.println("not implemented");
+	}
+	
+	public void sendMailBox (
+	
+			String key,
+			Boolean value) throws Exception {
+		sendMailBox((short)42, key, value);
 	}
 	
 	public void sendMailBox (
